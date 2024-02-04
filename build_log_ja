@@ -1,0 +1,148 @@
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex)
+ restricted \write18 enabled.
+entering extended mode
+(./latex/blackarch-guide-ja.tex
+pLaTeX2e <2023-02-14>+1, based on
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(c:/texlive/2023/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(c:/texlive/2023/texmf-dist/tex/latex/base/bk11.clo))
+(c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-def/dvips.def)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(c:/texlive/2023/texmf-dist/tex/latex/tools/enumerate.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty))
+(c:/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+(c:/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+(c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty)))
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+
+! LaTeX Error: File `html.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+(c:/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(c:/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(c:/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(c:/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(c:/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(c:/texlive/2023/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
+(c:/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty)
+(c:/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(c:/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(c:/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(c:/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def)
+(c:/texlive/2023/texmf-dist/tex/latex/url/url.sty)
+(c:/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
+(c:/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(c:/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/hdvips.def
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/pdfmark.def
+(c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))))
+(c:/texlive/2023/texmf-dist/tex/generic/iftex/ifpdf.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
+(c:/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg))
+(c:/texlive/2023/texmf-dist/tex/latex/pstricks/pstricks.sty
+(c:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(c:/texlive/2023/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+(c:/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex))))
+(c:/texlive/2023/texmf-dist/tex/generic/pstricks/pstricks.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv))
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.co
+de.tex))) (c:/texlive/2023/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex)))
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex))
+`PSTricks' v3.19c  <2024/02/02> (tvz,hv)
+--- We are running latex or xelatex ---
+(c:/texlive/2023/texmf-dist/tex/generic/pstricks/pstricks.con)
+(c:/texlive/2023/texmf-dist/tex/generic/pstricks/pstricks-color.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pstricks/pstricks-arrows.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pstricks/pstricks-dots.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pstricks/pstricks.con))
+(c:/texlive/2023/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv)))
+(c:/texlive/2023/texmf-dist/tex/latex/supertabular/supertabular.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/tocloft/tocloft.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty)
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/luatexja.sty
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
+
+! Package luatexja-core Error: This package requires Lua(HB)(La)TeX.
+
+See the luatexja-core package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 ...e}{This package requires Lua(HB)(La)TeX}{}
+                                                  
+? ) (c:/texlive/2023/texmf-dist/tex/luatex/luatexja/luatexja-compat.sty)
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \directlua{l
+                 uatexja.base.start_time_measure('RUN')}
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.62 \directlua{l
+                 uatexja.base.start_time_measure('RUN')}
+No pages of output.
+Transcript written on blackarch-guide-ja.log.

@@ -116,23 +116,23 @@ tabsize=2
 \chapter{はじめに}
 
 \section{概要}
-BlackArch Linux ガイドは、いくつかのパートに分かれています。
+BlackArch Linux ガイドは、いくつかのパートで構成されています。
 \begin{itemize}
 \item はじめに - 大まかな概要と導入、および追加で役立つプロジェクトの情報
-\item ユーザーガイド - BlackArchを効果的に使用するために一般ユーザーが知っておくべきこと
+\item ユーザーガイド - 一般的なユーザーがBlackArchを効果的に使用するために知っておくべきこと
 \item 開発者ガイド - BlackArchの開発に参加・貢献する方法
 \item ツールガイド - ツールの詳細と使用例(WIP)
 \end{itemize}
 
 \section{BlackArch Linuxとは？}
-BlackArchは、ペネトレーションテスターとセキュリティ研究者のための完全なLinuxディストリビューションです。
+BlackArchは、ペネトレーションテスターとセキュリティ研究者のための包括的なLinuxディストリビューションです。
 
 このツールセットはArch Linuxの\href{https://wiki.archlinux.org/index.php/Unofficial\_User\_Repositories}
-{非公式ユーザーリポジトリ}として配布されているため、既存のArch Linux上にBlackArchをインストールすることができます。
+{非公式ユーザーリポジトリ}として配布されているため、既存のArch Linux上に直接BlackArchをインストールすることができます。
 パッケージは個別にインストールすることも、カテゴリごとにインストールすることも可能です。
 
-継続的に拡張されるリポジトリには、現在\href{https://www.blackarch.org/tools.html}{2600}個以上のツールが含まれています。
-リポジトリの品質を保つため、すべてのツールはコードベースに追加される前に徹底的にテストされます。
+常に拡張を続けるリポジトリには、現在\href{https://www.blackarch.org/tools.html}{2600}個を超えるツールが含まれています。
+リポジトリの品質を保つため、すべてのツールはコードベースに追加される前に徹底的にテストされています。
 % should quickly describe the testing methods/code review procedures etc
 
 \section{BlackArch Linux の歴史}
@@ -161,128 +161,128 @@ Discord: \url{https://discord.com/invite/xMHt8dW}
 %------------------%
 
 
-\chapter{User Guide}
+\chapter{ユーザーガイド}
 
-\section{Installation}
-The following sections will show you how to setup the BlackArch repository and
-install packages. BlackArch supports both, installing from the repository using
-binary packages as well as compiling and installing from sources.
+\section{インストール}
+このセクションでは、BlackArchリポジトリのセットアップ方法やパッケージのインストール方法について説明します。
+BlackArchは、リポジトリからバイナリパッケージをインストールする方法と、ソースからコンパイルしてインストールする方法の両方をサポートしています。
 
-BlackArch is compatible with normal Arch installations. It acts as an unofficial
-user repository. If you want an ISO instead, see the
-\href{https://www.blackarch.org/downloads.html#iso}{ISOs} section.
+BlackArchは通常のArchインストールと互換性があり、非公式のユーザーリポジトリとして機能します。
+代わりにISOが必要な場合は、\href{https://www.blackarch.org/downloads.html#iso}{ISOs}セクションをご覧ください。
+% 訳注: ISOs は公式サイト上での記述（
 
-\subsection{Installing on top of ArchLinux}
-Run \href{https://blackarch.org/strap.sh}{strap.sh} as root and follow the
-instructions. See the following example.
+\subsection{ArchLinux上にインストール}
+\href{https://blackarch.org/strap.sh}{strap.sh}をrootで実行し、案内に従ってください。
+以下に例を示します。
 \begin{lstlisting}
    curl -O https://blackarch.org/strap.sh
-   sha1sum strap.sh # should match: 5ea40d49ecd14c2e024deecf90605426db97ea0c
+   sha1sum strap.sh # 5ea40d49ecd14c2e024deecf90605426db97ea0c と合致するはずです
    sudo chmod +x strap.sh
    sudo ./strap.sh
 \end{lstlisting}
 
-Now download a fresh copy of the master package list and synchronize packages:
+次に、マスターパッケージリストの新しいコピーをダウンロードし、パッケージを同期します。
 \begin{lstlisting}
   sudo pacman -Syyu
 \end{lstlisting}
 
 
-\subsection{Installing packages}
-You may now install tools from the blackarch repository.
+\subsection{パッケージをインストール}
+これで、blackarchリポジトリからツールをインストールできるようになりました。
+
 \begin{enumerate}
-\item To list all of the available tools, run
+\item 利用可能なすべてのツールをリストアップするには、以下を実行します
 \begin{lstlisting}
   pacman -Sgg | grep blackarch | cut -d' ' -f2 | sort -u
 \end{lstlisting}
 
-\item To install all of the tools, run
+\item すべてのツールをインストールするには、以下を実行します
 \begin{lstlisting}
   pacman -S blackarch
 \end{lstlisting}
 
-\item To install a category of tools, run
+\item カテゴリ内のツールをインストールするには、以下を実行します
 \begin{lstlisting}
   pacman -S blackarch-<category>
 \end{lstlisting}
 
-\item To see the blackarch categories, run
+\item blackarchのカテゴリを閲覧するには、以下を実行します
 \begin{lstlisting}
   pacman -Sg | grep blackarch
 \end{lstlisting}
 
 \end{enumerate}
 
-\subsection{Installing packages from source}
-As part of an alternative method of installation, you can build the BlackArch
-packages from source. You can find the PKGBUILDs on
-\href{https://github.com/BlackArch/blackarch/tree/master/packages}{github}. To
-build the entire repo, you can use the
-\href{https://github.com/BlackArch/blackman}{Blackman} tool.
+\subsection{ソースからパッケージをインストール}
+別のインストール方法として、BlackArchパッケージをソースからビルドすることもできます。
+PKGBUILDは\href{https://github.com/BlackArch/blackarch/tree/master/packages}{github}で入手できます。
+リポジトリ全体をビルドする場合は、\href{https://github.com/BlackArch/blackman}{Blackman}を使用できます。
+
 \begin{itemize}
-\item First, you have to install Blackman. If the BlackArch package repository
-is setup on your machine, you can install Blackman:
+\item 最初に、Blackmanをインストールする必要があります。BlackArchパッケージリポジトリがすでに設定済みなら、Blackmanをインストールできます
 \begin{lstlisting}
   pacman -S blackman
 \end{lstlisting}
 
-\item You can build and install Blackman from source:
+\item Blackmanをソースからビルドしてインストールできます
 \begin{lstlisting}
   mkdir blackman
   cd blackman
   wget https://raw.github.com/BlackArch/blackarch/master/packages/blackman/PKGBUILD
-  # Make sure the PKGBUILD has not been maliciously tampered with.
+  # PKGBUILDが悪意を持って改ざんされていないことを確認してください
   makepkg -s
 \end{lstlisting}
 
-\item Or you can install Blackman from the AUR:
+\item または、AURからBlackmanをインストールできます
 \begin{lstlisting}
-  <whatever AUR helper you use> -S blackman
+  <好きなAURヘルパー> -S blackman
 \end{lstlisting}
 
 \end{itemize}
 
-\subsection{Basic Blackman usage} Blackman is very simple to use, though the flags are different from what you
-would typically expect from something like pacman. Basic usage has been outlined below.
+\subsection{Blackmanの基本的な使い方} 
+Blackmanの使い方は非常に簡単ですが、フラグは一般的にpacmanのようなコマンドで期待されるものとは異なります。
+基本的な使い方を以下に概説します。
 \begin{itemize}
-\item Download, compile and install packages:
+\item パッケージをダウンロード、コンパイルしてインストール
 \begin{lstlisting}
   sudo blackman -i package
 \end{lstlisting}
 
-\item Download, compile and install whole category:
+\item カテゴリ全体をダウンロード、コンパイルしてインストール
 \begin{lstlisting}
   sudo blackman -g group
 \end{lstlisting}
 
-\item Download, compile and install all of the BlackArch tools:
+\item すべてのBlackArchツールをダウンロード、コンパイルしてインストール
 \begin{lstlisting}
   sudo blackman -a
 \end{lstlisting}
 
-\item To list the blackarch categories:
+\item blackarchカテゴリをリストアップ
 \begin{lstlisting}
   blackman -l
 \end{lstlisting}
 
-\item To list category tools:
+\item カテゴリ内のツールをリストアップ
 \begin{lstlisting}
   blackman -p category
 \end{lstlisting}
 
 \end{itemize}
 
-\subsection{Installing from full-, netinstall- ISO or ArchLinux}
-You can install BlackArch Linux from one of our full- or netinstall-ISOs.\\See
-\url{https://www.blackarch.org/download.html#iso}. The following steps are
-required after the ISO boot up.
+\subsection{full-, netinstall- ISO またはArchLinuxからインストール}
+full- or netinstall-ISOからBlackArch Linuxをインストールすることができます。
+\\詳細は\url{https://www.blackarch.org/download.html#iso}をご覧ください。
+以下のステップはISOが起動した後に行ってください。
+
 \begin{itemize}
-\item Install blackarch-installer package:
+\item blackarch-installerパッケージをインストール
 \begin{lstlisting}
   sudo pacman -S blackarch-installer
 \end{lstlisting}
 
-\item Run
+\item 以下を実行
 \begin{lstlisting}
   sudo blackarch-install
 \end{lstlisting}

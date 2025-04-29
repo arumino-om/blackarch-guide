@@ -191,9 +191,23 @@ lint-zh:
 		ba-guide:$(VERSION) \
 		/bin/sh -c "chktex ${srcdir}/*-zh.tex; exit 0"
 
+PHONY: lint-ja
+lint-ja:
+	@echo "==========================================="
+	@echo "= linting Japanese Guide                  ="
+	@echo "==========================================="
+	@docker run \
+		--rm \
+		-ti \
+		-v $(shell pwd):/guide:rw \
+		-w /guide \
+		--hostname ba-guide \
+		ba-guide:$(VERSION) \
+		/bin/sh -c "chktex ${srcdir}/*-ja.tex; exit 0"
+
 # run the latex linting tool
 .PHONY: lint
-lint: lint-de lint-el lint-en lint-es lint-fr lint-it lint-pt-br lint-ru lint-tr lint-zh
+lint: lint-de lint-el lint-en lint-es lint-fr lint-it lint-pt-br lint-ru lint-tr lint-zh lint-ja
 
 # generate pdf per language
 .PHONY: pdf-de
@@ -361,6 +375,21 @@ pdf-zh:
 			    lualatex \
 			    ${srcdir}/blackarch-guide-zh.tex 1>>./build_log_zh"
 
+.PHONY: pdf-ja
+pdf-ja:
+	@echo "Compiling Japanese guide - output in build_log_ja"
+	@docker run \
+		--rm \
+		-ti \
+		-v $(shell pwd):/guide:rw \
+		-w /guide \
+		--hostname ba-guide \
+		ba-guide:$(VERSION) \
+		/bin/sh -c "lualatex \
+			    ${srcdir}/blackarch-guide-ja.tex 1>./build_log_ja; \
+			    lualatex \
+			    ${srcdir}/blackarch-guide-ja.tex 1>>./build_log_ja"
+
 # generate for all languages
 .PHONY: pdf
-pdf: pdf-de pdf-el pdf-en pdf-es pdf-fr pdf-it pdf-pt-br pdf-ru pdf-tr pdf-zh
+pdf: pdf-de pdf-el pdf-en pdf-es pdf-fr pdf-it pdf-pt-br pdf-ru pdf-tr pdf-zh pdf-ja
